@@ -23,7 +23,7 @@ func main() {
 	fmt.Printf("Kapital: %.0f€, Zinsatz: %.2f%% p.a.\n", kapital, zinssatz)
 
 	// Berechnet die Zinssätze für 1 Jahr
-	calcTagesgeld(kapital, zinssatz, monate)
+	CalcTagesgeld(kapital, zinssatz, monate)
 }
 
 func readText(prompt string) string {
@@ -40,7 +40,7 @@ func readText(prompt string) string {
 	return text
 }
 
-func calcTagesgeld(kapital float64, zinssatz float64, monate int64) float64 {
+func CalcTagesgeld(kapital float64, zinssatz float64, monate int64) float64 {
 
 	// Zinsatz in Kommaform (5% == 0.05)
 	zinssatz = zinssatz / 100.0
