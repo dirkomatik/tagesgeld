@@ -1,6 +1,6 @@
 package main
 
-import "testing"
+import "testing" 
 
 func TestCalcTagesgeld(t *testing.T) {
 	testwert := CalcTagesgeld(5000.0, 5.0, 1)
